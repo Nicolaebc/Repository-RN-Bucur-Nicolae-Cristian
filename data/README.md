@@ -20,4 +20,3 @@
 | feature_1/pietoni  | numeric | densitate/m^2 | numarul de pietoni pe m^2 | 0–150              |
 | feature_2/vehicule | numeric | km/h          | viteza soferilor          | 0-75               |
 | feature_3/veh_urg  | numeric | km/h          | viteza veh de urgenta     | 0–10               |
-| ... | ... | ... | ... | ... |
