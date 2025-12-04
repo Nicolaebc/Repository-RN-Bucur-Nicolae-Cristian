@@ -1,12 +1,13 @@
-**Tabel Nevoie Reală**
+### Tabel Nevoie Reală
 
-| *Nevoie reală concretă* |	*Cum o rezolvă SIA-ul vostru* |	*Modul software responsabil* |
+| **Nevoie reală concretă** |	**Cum o rezolvă SIA-ul vostru** |	**Modul software responsabil** |
+|--------------------|---------|---------------|
 | Prioritizarea vehiculelor de urgență (ambulanță, poliție, pompieri)	 | Detectare vehicul urgență → semafor roșu în < 2 secunde pentru restul traficului | Data Logging + State Machine + Control Module | 
  | Reducerea timpilor de așteptare pietoni	 | Analiză densitate pietoni → semafor verde cu > 95% acuratețe	 | Data Logging + RN Inference + UI | 
  | Optimizarea fluxului de vehicule în intersecții	 | Predicție trafic → reducere 20% timp de traversare	 | Data Logging + State Machine + Dashboard | 
 
 
-**Diagrama State Machine (textuală)**
+## Diagrama State Machine (textuală)
 IDLE → ACQUIRE_TRAFFIC_DATA → PREPROCESS (normalizare, filtrare) → RN_INFERENCE → DECISION_CHECK →
   ├─ [Vehicul urgență] → PRIORITY_GREEN → LOG_EVENT → IDLE
   ├─ [Pietoni mulți] → PEDESTRIAN_GREEN → LOG_EVENT → IDLE
@@ -14,9 +15,9 @@ IDLE → ACQUIRE_TRAFFIC_DATA → PREPROCESS (normalizare, filtrare) → RN_INFE
        ↓ [Error / Sensor fail]
      SAFE_SHUTDOWN → STOP
 
-Am ales arhitectura de control în timp real deoarece proiectul nostru gestionează semafoarele în funcție de datele colectate din trafic.
+# Am ales arhitectura de control în timp real deoarece proiectul nostru gestionează semafoarele în funcție de datele colectate din trafic.
 
-Stările principale sunt:
+## Stările principale sunt:
 ACQUIRE_TRAFFIC_DATA – colectarea datelor despre vehicule și pietoni.
 PREPROCESS – filtrarea și normalizarea datelor brute.
 RN_INFERENCE – rularea rețelei neuronale pentru decizie.
