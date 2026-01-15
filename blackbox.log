@@ -1,0 +1,83 @@
+[2026-01-13 19:12:00] STATUS: 1 | MOTIV: OPTIMIZARE FLUX: Trafic N-S (20) dominant față de E-V (20). Diferență: +0 vehicule. | URGENȚĂ: False
+[2026-01-13 19:12:09] STATUS: 1 | MOTIV: OPTIMIZARE FLUX: Trafic N-S (20) dominant față de E-V (20). Diferență: +0 vehicule. | URGENȚĂ: False
+[2026-01-13 19:12:12] STATUS: 1 | MOTIV: OPTIMIZARE FLUX: Trafic N-S (20) dominant față de E-V (20). Diferență: +0 vehicule. | URGENȚĂ: False
+[2026-01-13 19:12:15] STATUS: 1 | MOTIV: OPTIMIZARE FLUX: Trafic N-S (20) dominant față de E-V (69). Diferență: +-49 vehicule. | URGENȚĂ: False
+[2026-01-13 19:12:16] STATUS: 2 | MOTIV: OPTIMIZARE FLUX: Trafic E-V (93) dominant față de N-S (20). Diferență: +73 vehicule. | URGENȚĂ: False
+[2026-01-13 19:12:19] STATUS: 2 | MOTIV: OPTIMIZARE FLUX: Trafic E-V (93) dominant față de N-S (20). Diferență: +73 vehicule. | URGENȚĂ: False
+[2026-01-13 19:12:20] STATUS: 2 | MOTIV: OPTIMIZARE FLUX: Trafic E-V (70) dominant față de N-S (20). Diferență: +50 vehicule. | URGENȚĂ: False
+[2026-01-13 19:12:21] STATUS: 1 | MOTIV: OPTIMIZARE FLUX: Trafic N-S (20) dominant față de E-V (27). Diferență: +-7 vehicule. | URGENȚĂ: False
+[2026-01-13 19:13:32] STATUS: 0 | MOTIV: ⚠️ PROTOCOL PRIORITATE: Detectat vehicul intervenție. | URGENȚĂ: True
+[2026-01-13 19:13:43] STATUS: 1 | MOTIV: OPTIMIZARE FLUX: Trafic N-S (83) dominant față de E-V (66). Diferență: +17 vehicule. | URGENȚĂ: False
+[2026-01-13 19:13:47] STATUS: 1 | MOTIV: OPTIMIZARE FLUX: Trafic N-S (74) dominant față de E-V (18). Diferență: +56 vehicule. | URGENȚĂ: False
+[2026-01-13 19:13:50] STATUS: 0 | MOTIV: ⚠️ PROTOCOL PRIORITATE: Detectat vehicul intervenție. | URGENȚĂ: True
+[2026-01-13 19:13:53] STATUS: 2 | MOTIV: OPTIMIZARE FLUX: Trafic E-V (89) dominant față de N-S (61). Diferență: +28 vehicule. | URGENȚĂ: False
+[2026-01-13 19:13:57] STATUS: 1 | MOTIV: OPTIMIZARE FLUX: Trafic N-S (54) dominant față de E-V (5). Diferență: +49 vehicule. | URGENȚĂ: False
+[2026-01-13 19:14:00] STATUS: 2 | MOTIV: OPTIMIZARE FLUX: Trafic E-V (27) dominant față de N-S (26). Diferență: +1 vehicule. | URGENȚĂ: False
+[2026-01-13 19:14:03] STATUS: 1 | MOTIV: OPTIMIZARE FLUX: Trafic N-S (72) dominant față de E-V (41). Diferență: +31 vehicule. | URGENȚĂ: False
+[2026-01-13 19:14:07] STATUS: 1 | MOTIV: OPTIMIZARE FLUX: Trafic N-S (26) dominant față de E-V (26). Diferență: +0 vehicule. | URGENȚĂ: False
+[2026-01-13 19:14:10] STATUS: 2 | MOTIV: OPTIMIZARE FLUX: Trafic E-V (34) dominant față de N-S (34). Diferență: +0 vehicule. | URGENȚĂ: False
+[2026-01-13 19:14:13] STATUS: 1 | MOTIV: OPTIMIZARE FLUX: Trafic N-S (94) dominant față de E-V (20). Diferență: +74 vehicule. | URGENȚĂ: False
+[2026-01-13 19:14:14] STATUS: 0 | MOTIV: ⚠️ PROTOCOL PRIORITATE: Detectat vehicul intervenție. | URGENȚĂ: True
+[2026-01-13 19:15:16] STATUS: VERDE NORD-SUD | MOTIV: OPTIMIZARE FLUX: Trafic N-S (20) > E-V (20). Diferență: +0. | URGENȚĂ: False
+[2026-01-13 19:15:38] STATUS: VERDE NORD-SUD | MOTIV: OPTIMIZARE FLUX: Trafic N-S (47) > E-V (33). Diferență: +14. | URGENȚĂ: False
+[2026-01-13 19:16:07] STATUS: URGENȚĂ | MOTIV: ⚠️ PROTOCOL PRIORITATE: Detectat vehicul intervenție. | URGENȚĂ: True
+[2026-01-13 19:16:32] STATUS: VERDE EST-VEST | MOTIV: OPTIMIZARE FLUX: Trafic E-V (8) > N-S (28). Diferență: +-20. | URGENȚĂ: False
+[2026-01-13 19:16:36] STATUS: VERDE EST-VEST | MOTIV: OPTIMIZARE FLUX: Trafic E-V (81) > N-S (37). Diferență: +44. | URGENȚĂ: False
+[2026-01-13 19:16:46] STATUS: VERDE NORD-SUD | MOTIV: OPTIMIZARE FLUX: Trafic N-S (96) > E-V (40). Diferență: +56. | URGENȚĂ: False
+[2026-01-13 19:39:20] STATUS: VERDE EST-VEST | MOTIV: OPTIMIZARE FLUX: Trafic E-V (38) > N-S (21). Diferenta: +17. | URGENTA: False
+[2026-01-13 19:39:22] STATUS: URGENTA | MOTIV: ⚠️ PROTOCOL PRIORITATE: Am detectat vehicul interventie. | URGENTA: True
+[2026-01-13 19:39:22] STATUS: VERDE NORD-SUD | MOTIV: OPTIMIZARE FLUX: Trafic N-S (63) > E-V (71). Diferenta: +-8. | URGENTA: False
+[2026-01-13 19:39:24] STATUS: VERDE NORD-SUD | MOTIV: OPTIMIZARE FLUX: Trafic N-S (41) > E-V (36). Diferenta: +5. | URGENTA: False
+[2026-01-13 19:39:33] STATUS: VERDE NORD-SUD | MOTIV: OPTIMIZARE FLUX: Trafic N-S (83) > E-V (60). Diferenta: +23. | URGENTA: False
+[2026-01-13 19:39:33] STATUS: URGENTA | MOTIV: ⚠️ PROTOCOL PRIORITATE: Am detectat vehicul interventie. | URGENTA: True
+[2026-01-13 19:39:35] STATUS: VERDE NORD-SUD | MOTIV: OPTIMIZARE FLUX: Trafic N-S (85) > E-V (39). Diferenta: +46. | URGENTA: False
+[2026-01-13 19:39:45] STATUS: VERDE EST-VEST | MOTIV: OPTIMIZARE FLUX: Trafic E-V (20) > N-S (20). Diferenta: +0. | URGENTA: False
+[2026-01-13 19:39:48] STATUS: VERDE EST-VEST | MOTIV: OPTIMIZARE FLUX: Trafic E-V (29) > N-S (20). Diferenta: +9. | URGENTA: False
+[2026-01-13 19:39:49] STATUS: VERDE NORD-SUD | MOTIV: OPTIMIZARE FLUX: Trafic N-S (42) > E-V (29). Diferenta: +13. | URGENTA: False
+[2026-01-13 19:39:51] STATUS: VERDE NORD-SUD | MOTIV: OPTIMIZARE FLUX: Trafic N-S (42) > E-V (29). Diferenta: +13. | URGENTA: False
+[2026-01-13 19:39:54] STATUS: URGENTA | MOTIV: ⚠️ PROTOCOL PRIORITATE: Am detectat vehicul interventie. | URGENTA: True
+[2026-01-13 20:00:22] STATUS: VERDE NORD-SUD | MOTIV: OPTIMIZARE FLUX: Trafic N-S (48) > E-V (70). Diferenta: +-22. | URGENTA: False
+[2026-01-13 20:04:09] STATUS: VERDE EST-VEST | MOTIV: OPTIMIZARE FLUX: Trafic E-V (49) > N-S (3). Diferenta: +46. | URGENTA: False
+[2026-01-13 20:04:13] STATUS: VERDE EST-VEST | MOTIV: OPTIMIZARE FLUX: Trafic E-V (65) > N-S (25). Diferenta: +40. | URGENTA: False
+[2026-01-13 20:04:16] STATUS: VERDE EST-VEST | MOTIV: OPTIMIZARE FLUX: Trafic E-V (24) > N-S (10). Diferenta: +14. | URGENTA: False
+[2026-01-13 20:04:17] STATUS: VERDE NORD-SUD | MOTIV: OPTIMIZARE FLUX: Trafic N-S (58) > E-V (25). Diferenta: +33. | URGENTA: False
+[2026-01-13 20:04:18] STATUS: VERDE NORD-SUD | MOTIV: OPTIMIZARE FLUX: Trafic N-S (55) > E-V (77). Diferenta: +-22. | URGENTA: False
+[2026-01-13 20:04:20] STATUS: VERDE NORD-SUD | MOTIV: OPTIMIZARE FLUX: Trafic N-S (86) > E-V (33). Diferenta: +53. | URGENTA: False
+[2026-01-13 20:04:24] STATUS: VERDE EST-VEST | MOTIV: OPTIMIZARE FLUX: Trafic E-V (21) > N-S (18). Diferenta: +3. | URGENTA: False
+[2026-01-13 20:04:27] STATUS: VERDE EST-VEST | MOTIV: OPTIMIZARE FLUX: Trafic E-V (88) > N-S (58). Diferenta: +30. | URGENTA: False
+[2026-01-13 20:04:29] STATUS: VERDE EST-VEST | MOTIV: OPTIMIZARE FLUX: Trafic E-V (81) > N-S (18). Diferenta: +63. | URGENTA: False
+[2026-01-13 20:04:32] STATUS: URGENTA | MOTIV: ⚠️ PROTOCOL PRIORITATE: Am detectat vehicul interventie. | URGENTA: True
+[2026-01-13 20:04:32] STATUS: VERDE NORD-SUD | MOTIV: OPTIMIZARE FLUX: Trafic N-S (22) > E-V (21). Diferenta: +1. | URGENTA: False
+[2026-01-14 13:02:19] STATUS: VERDE NORD-SUD | MOTIV: OPTIMIZARE FLUX: Trafic N-S (6) > E-V (5). Diferenta: +1. | URGENTA: False
+[2026-01-14 13:02:24] STATUS: VERDE EST-VEST | MOTIV: OPTIMIZARE FLUX: Trafic E-V (44) > N-S (18). Diferenta: +26. | URGENTA: False
+[2026-01-14 13:02:26] STATUS: VERDE EST-VEST | MOTIV: OPTIMIZARE FLUX: Trafic E-V (63) > N-S (7). Diferenta: +56. | URGENTA: False
+[2026-01-14 13:02:31] STATUS: VERDE EST-VEST | MOTIV: OPTIMIZARE FLUX: Trafic E-V (87) > N-S (76). Diferenta: +11. | URGENTA: False
+[2026-01-14 13:02:33] STATUS: VERDE EST-VEST | MOTIV: OPTIMIZARE FLUX: Trafic E-V (75) > N-S (73). Diferenta: +2. | URGENTA: False
+[2026-01-14 13:02:34] STATUS: VERDE NORD-SUD | MOTIV: OPTIMIZARE FLUX: Trafic N-S (14) > E-V (14). Diferenta: +0. | URGENTA: False
+[2026-01-14 13:02:36] STATUS: VERDE EST-VEST | MOTIV: OPTIMIZARE FLUX: Trafic E-V (33) > N-S (22). Diferenta: +11. | URGENTA: False
+[2026-01-14 13:02:38] STATUS: VERDE NORD-SUD | MOTIV: OPTIMIZARE FLUX: Trafic N-S (71) > E-V (56). Diferenta: +15. | URGENTA: False
+[2026-01-14 13:02:50] STATUS: VERDE EST-VEST | MOTIV: OPTIMIZARE FLUX: Trafic E-V (61) > N-S (41). Diferenta: +20. | URGENTA: False
+[2026-01-14 13:02:52] STATUS: VERDE NORD-SUD | MOTIV: OPTIMIZARE FLUX: Trafic N-S (64) > E-V (54). Diferenta: +10. | URGENTA: False
+[2026-01-14 13:05:38] STATUS: URGENTA | MOTIV: ⚠️ PROTOCOL PRIORITATE: Am detectat vehicul interventie. | URGENTA: True
+[2026-01-15 08:12:45] STATUS: URGENTA | MOTIV: ⚠️ PROTOCOL PRIORITATE: Am detectat vehicul interventie. | URGENTA: True
+[2026-01-15 08:12:46] STATUS: VERDE NORD-SUD | MOTIV: OPTIMIZARE FLUX: Trafic N-S (85) > E-V (30). Diferenta: +55. | URGENTA: False
+[2026-01-15 08:12:49] STATUS: VERDE NORD-SUD | MOTIV: OPTIMIZARE FLUX: Trafic N-S (3) > E-V (27). Diferenta: +-24. | URGENTA: False
+[2026-01-15 08:12:49] STATUS: URGENTA | MOTIV: ⚠️ PROTOCOL PRIORITATE: Am detectat vehicul interventie. | URGENTA: True
+[2026-01-15 08:23:37] STATUS: URGENTA | MOTIV: ⚠️ PROTOCOL PRIORITATE: Am detectat vehicul interventie. | URGENTA: True
+[2026-01-15 08:23:42] STATUS: VERDE NORD-SUD | MOTIV: OPTIMIZARE FLUX: Trafic N-S (50) > E-V (2). Diferenta: +48. | URGENTA: False
+[2026-01-15 08:23:43] STATUS: URGENTA | MOTIV: ⚠️ PROTOCOL PRIORITATE: Am detectat vehicul interventie. | URGENTA: True
+[2026-01-15 08:23:46] STATUS: VERDE EST-VEST | MOTIV: OPTIMIZARE FLUX: Trafic E-V (57) > N-S (30). Diferenta: +27. | URGENTA: False
+[2026-01-15 08:23:49] STATUS: VERDE NORD-SUD | MOTIV: OPTIMIZARE FLUX: Trafic N-S (42) > E-V (43). Diferenta: +-1. | URGENTA: False
+[2026-01-15 08:23:50] STATUS: VERDE EST-VEST | MOTIV: OPTIMIZARE FLUX: Trafic E-V (54) > N-S (24). Diferenta: +30. | URGENTA: False
+[2026-01-15 08:23:58] STATUS: VERDE EST-VEST | MOTIV: OPTIMIZARE FLUX: Trafic E-V (73) > N-S (19). Diferenta: +54. | URGENTA: False
+[2026-01-15 08:38:39] STATUS: URGENTA | MOTIV: ⚠️ PROTOCOL PRIORITATE: Am detectat vehicul interventie. | URGENTA: True
+[2026-01-15 08:38:42] STATUS: VERDE NORD-SUD | MOTIV: OPTIMIZARE FLUX: Trafic N-S (48) > E-V (51). Diferenta: +-3. | URGENTA: False
+[2026-01-15 08:38:43] STATUS: VERDE EST-VEST | MOTIV: OPTIMIZARE FLUX: Trafic E-V (52) > N-S (52). Diferenta: +0. | URGENTA: False
+[2026-01-15 08:38:46] STATUS: VERDE NORD-SUD | MOTIV: OPTIMIZARE FLUX: Trafic N-S (98) > E-V (65). Diferenta: +33. | URGENTA: False
+[2026-01-15 08:38:48] STATUS: VERDE NORD-SUD | MOTIV: OPTIMIZARE FLUX: Trafic N-S (63) > E-V (34). Diferenta: +29. | URGENTA: False
+[2026-01-15 08:45:19] STATUS: VERDE EST-VEST | CONF: 100.0% | MOTIV: OPTIMIZARE FLUX: Trafic E-V (71) > N-S (33). | URGENTA: False
+[2026-01-15 08:45:26] STATUS: VERDE NORD-SUD | CONF: 94.2% | MOTIV: OPTIMIZARE FLUX: Trafic N-S (83) > E-V (72). | URGENTA: False
+[2026-01-15 08:45:32] STATUS: VERDE NORD-SUD | CONF: 99.9% | MOTIV: OPTIMIZARE FLUX: Trafic N-S (87) > E-V (42). | URGENTA: False
+[2026-01-15 08:45:47] STATUS: VERDE EST-VEST | CONF: 100.0% | MOTIV: OPTIMIZARE FLUX: Trafic E-V (78) > N-S (1). | URGENTA: False
+[2026-01-15 08:45:48] STATUS: URGENTA - SIRENA | CONF: 100.0% | MOTIV: ⚠️ PROTOCOL PRIORITATE: Am detectat vehicul interventie. | URGENTA: True
+[2026-01-15 08:45:54] STATUS: VERDE NORD-SUD | CONF: 99.9% | MOTIV: OPTIMIZARE FLUX: Trafic N-S (54) > E-V (28). | URGENTA: False
