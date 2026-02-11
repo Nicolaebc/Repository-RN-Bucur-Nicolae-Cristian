@@ -1,0 +1,5 @@
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+.\.venv\Scripts\Activate
+
+streamlit run src/app/main.py

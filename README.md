@@ -4,10 +4,42 @@
 **Institutie:** POLITEHNICA Bucuresti – FIIR  
 **Student:** BUCUR Nicolae-Cristian
 **Grupa:** 633AB  
+**Link Repository GitHub:** https://github.com/Nicolaebc/Repository-RN-Bucur-Nicolae-Cristian
+**Stack Tehnologic:** Python
+**Domeniul Industrial de Interes (DII):** Automatizare
 
 ---
 
-## Descriere Etapa 3: Analiza si Pregatirea Setului de Date
+### Declarație de Originalitate & Politica de Utilizare AI
+
+**Acest proiect reflectă munca, gândirea și deciziile mele proprii.**
+
+Utilizarea asistenților de inteligență artificială (ChatGPT, Claude, Grok, GitHub Copilot etc.) este **permisă și încurajată** ca unealtă de dezvoltare – pentru explicații, generare de idei, sugestii de cod, debugging, structurarea documentației sau rafinarea textelor.
+
+**Nu este permis** să preiau:
+- cod, arhitectură RN sau soluție luată aproape integral de la un asistent AI fără modificări și raționamente proprii semnificative,
+- dataset-uri publice fără contribuție proprie substanțială (minimum 40% din observațiile finale – conform cerinței obligatorii Etapa 4),
+- conținut esențial care nu poartă amprenta clară a propriei mele înțelegeri.
+
+**Confirmare explicită (bifez doar ce este adevărat):**
+
+| Nr. | Cerință                                                                 | Confirmare |
+|-----|-------------------------------------------------------------------------|------------|
+| 1   | Modelul RN a fost antrenat **de la zero** (weights inițializate random, **NU** model pre-antrenat descărcat) | [ X ] DA     |
+| 2   | Minimum **40% din date sunt contribuție originală** (generate/achiziționate/etichetate de mine) | [ X ] DA     |
+| 3   | Codul este propriu sau sursele externe sunt **citate explicit** în Bibliografie | [ X ] DA     |
+| 4   | Arhitectura, codul și interpretarea rezultatelor reprezintă **muncă proprie** (AI folosit doar ca tool, nu ca sursă integrală de cod/dataset) | [  X  ] DA     |
+| 5   | Pot explica și justifica **fiecare decizie importantă** cu argumente proprii | [ X ] DA     |
+
+**Semnătură student (prin completare):** Declar pe propria răspundere că informațiile de mai sus sunt corecte.
+-Bucur Nicolae-Cristian 
+
+### Beneficii Măsurabile Urmărite
+
+1. Posibilitatea de a salva vieti, cu sistemul in care toata intersectia se face rosie in cazul unei urgente
+2. Datectarea cu o mare acuratete a fluiditatii traficului si sustinerea acestuia
+3. Reducerea defectelor care pot aparea in sistemul vechi al unei intersectii semaforizate
+---
 
 In aceasta etapa, am generat, analizat si preprocesat setul de date necesar pentru antrenarea retelei neuronale. Scopul este crearea unui model capabil sa decida faza semaforului (Verde N-S / Verde E-V / Urgenta) bazandu-se pe fluxul de masini, pietoni si semnale acustice.
 
@@ -24,10 +56,20 @@ PROIECT RETELE NEURONALE/
 │   ├── validation/                # Date validare (X, y)
 │   ├── test/                      # Date testare (X, y)
 │   ├── processed/                 # (Rezervat procesari intermediare)
-│   ├── trafic_istoric.db          # Baza de date SQLite (backup)
-│   └── README.md                  # Documentatie specifica datelor
+│   └──trafic_istoric.db          # Baza de date SQLite (backup)
+│
 ├── docs/                          # Documentatie proiect
+│   ├── etapa3_analiza_date.md                 
+│   ├── etapa4_arhitectura_SIA.md               
+│   ├── etapa5_antrenare_model.md              
+│   ├── etapa6_optimizare_concluzi.md                 
+│   ├── confusion_matrix_optimized.png           
+│   ├── rezultate_grafic.png             
+│   ├── screenshot_app_normal.png   
+│   ├── screenshot_app_urgenta.png   
+│   └── state_machine.png             
 ├── models/
+│   ├── optimized_model.h5         # Arhitectura modelului optimizat
 │   ├── untrained_model.h5         # Arhitectura initiala
 │   └── trained_model.h5           # Modelul antrenat final
 ├── src/                           # Cod Sursa
@@ -36,6 +78,7 @@ PROIECT RETELE NEURONALE/
 │   ├── data_acquisition/
 │   │   └── generator.py           # Script generare date sintetice
 │   ├── neural_network/
+│   │   ├── optimize_and_evaluate.py 
 │   │   ├── model.py               # Definire arhitectura (CNN/Dense)
 │   │   └── train.py               # Script antrenare model
 │   └── preprocessing/
@@ -209,56 +252,56 @@ Antrenarea respecta fluxul definit in Etapa 4:
 
 ## Scopul Etapei 6
 
-În această etapă am maturizat complet Sistemul cu Inteligență Artificială (SIA). Am rulat experimente de optimizare pentru a găsi cea mai bună configurație a modelului și am actualizat aplicația software pentru a folosi acest model superior.
+In aceasta etapa am maturizat complet Sistemul cu Inteligenta Artificiala (SIA). Am rulat experimente de optimizare pentru a gasi cea mai buna configuratie a modelului si am actualizat aplicatia software pentru a folosi acest model superior.
 
-### 13. Actualizarea Aplicației Software în Etapa 6
+### 13. Actualizarea Aplicatiei Software in Etapa 6
 
-### Tabel Modificări Aplicație Software
+### Tabel Modificari Aplicatie Software
 
 | **Componenta** | **Stare Etapa 5** | **Modificare Etapa 6** | **Justificare** |
 |----------------|-------------------|------------------------|-----------------|
-| **Model încărcat** | `trained_model.h5` (Baseline) | `optimized_model.h5` (Optimizat) | Asigurarea celei mai bune acurateți disponibile (98.8%). |
-| **Metodă Încărcare** | `keras.models.load_model` | `tf.keras.models.load_model` | Compatibilitate stabilă cu noile versiuni TensorFlow. |
-| **Feedback Vizual** | Text simplu | Afișare procentuală încredere (Confidence) | Transparență sporită pentru operatorul uman. |
-| **Logică Fallback** | Eroare dacă lipsește modelul | Fallback automat pe model vechi | Creșterea robusteții sistemului în producție. |
+| **Model incarcat** | `trained_model.h5` (Baseline) | `optimized_model.h5` (Optimizat) | Asigurarea celei mai bune acurateti disponibile (98.8%). |
+| **Metoda Incarcare** | `keras.models.load_model` | `tf.keras.models.load_model` | Compatibilitate stabila cu noile versiuni TensorFlow. |
+| **Feedback Vizual** | Text simplu | Afisare procentuala incredere (Confidence) | Transparenta sporita pentru operatorul uman. |
+| **Logica Fallback** | Eroare daca lipseste modelul | Fallback automat pe model vechi | Cresterea robustetii sistemului in productie. |
 
 ---
 
-### 14. Analiza Detaliată a Performanței
+### 14. Analiza Detaliata a Performantei
 
-### 14.1 Confusion Matrix și Interpretare
+### 14.1 Confusion Matrix si Interpretare
 
-**Locație:** `docs/confusion_matrix_optimized.png`
+**Locatie:** `docs/confusion_matrix_optimized.png`
 
-**Analiză:**
-Matricea de confuzie arată o performanță aproape ideală. Diagonală principală concentrează majoritatea predicțiilor, ceea ce indică faptul că modelul distinge corect între cele 3 stări critice:
-- **Urgență:** Recunoscută corect în proporție de 100% (Crucial pentru siguranță).
-- **Verde N-S vs Verde E-V:** Confuziile sunt inexistente sau neglijabile, datorită diferențelor clare de flux de trafic simulate.
+**Analiza:**
+Matricea de confuzie arata o performanta aproape ideala. Diagonala principala concentreaza majoritatea predictiilor, ceea ce indica faptul ca modelul distinge corect intre cele 3 stari critice:
+- **Urgenta:** Recunoscuta corect in proportie de 100% (Crucial pentru siguranta).
+- **Verde N-S vs Verde E-V:** Confuziile sunt inexistente sau neglijabile, datorita diferentelor clare de flux de trafic simulate.
 
-### 14.2 Analiza Exemplelor Greșite
+### 14.2 Analiza Exemplelor Gresite
 
-Deoarece modelul a atins o acuratețe de **>98%** pe setul de testare sintetic, erorile sunt extrem de rare sau inexistente.
+Deoarece modelul a atins o acuratete de **>98%** pe setul de testare sintetic, erorile sunt extrem de rare sau inexistente.
 
-**Observație:**
-Faptul că modelul nu greșește pe setul de test demonstrează că a învățat perfect "regulile jocului" din simulator. În context industrial real, ne-am aștepta la erori cauzate de zgomotul senzorilor reali, însă logica neurală este validată matematic.
+**Observatie:**
+Faptul ca modelul nu greseste pe setul de test demonstreaza ca a invatat perfect "regulile jocului" din simulator. In context industrial real, ne-am astepta la erori cauzate de zgomotul senzorilor reali, insa logica neurala este validata matematic.
 
 ---
 
-### 15. Optimizarea Parametrilor și Experimentare
+### 15. Optimizarea Parametrilor si Experimentare
 
-Am rulat 4 experimente distincte pentru a valida stabilitatea și performanța arhitecturii.
+Am rulat 4 experimente distincte pentru a valida stabilitatea si performanta arhitecturii.
 
 ### Tabel Experimente de Optimizare
 
-| **Exp#** | **Modificare față de Baseline** | **Accuracy** | **F1-score** | **Timp** | **Observații** |
+| **Exp#** | **Modificare fata de Baseline** | **Accuracy** | **F1-score** | **Timp** | **Observatii** |
 |----------|---------------------------------|--------------|--------------|----------|----------------|
-| **Baseline (Etapa 5)** | Configurația inițială (32+16 neuroni) | **0.9880** | **0.9911** | 7.4s | **Performanță Maximă. Ales ca model final.** |
-| Exp 1 | Learning rate mic (0.0001) | 0.9247 | 0.9438 | 7.2s | Convergență mai lentă, scor mai mic. |
-| Exp 2 | Arhitectură Complexă (64+32+16) | 0.9867 | 0.9901 | 7.9s | Complexitate inutilă, nu aduce câștig. |
-| Exp 3 | Regularizare (Dropout 0.2) | 0.9867 | 0.9901 | 5.3s | Previne overfitting, dar scade ușor precizia. |
+| **Baseline (Etapa 5)** | Configuratia initiala (32+16 neuroni) | **0.9880** | **0.9911** | 7.4s | **Model Final.** |
+| Exp 1 | Learning rate mic (0.0001) | 0.9247 | 0.9438 | 7.2s | Convergenta mai lenta, scor mai mic. |
+| Exp 2 | Arhitectura Complexa (64+32+16) | 0.9867 | 0.9901 | 7.9s | Complexitate inutila, nu aduce castig. |
+| Exp 3 | Regularizare (Dropout 0.2) | 0.9867 | 0.9901 | 5.3s | Previne overfitting, dar scade usor precizia. |
 
-**Justificare alegere configurație finală:**
-Am păstrat modelul **Baseline (Etapa 5)** ca `optimized_model.h5` deoarece a obținut cel mai mare scor F1 (0.9911). Acest lucru demonstrează că arhitectura inițială a fost bine dimensionată pentru complexitatea problemei, iar complicarea ei (Exp 2) sau încetinirea învățării (Exp 1) nu au adus beneficii.
+**Justificare alegere configuratie finala:**
+Am pastrat modelul **Baseline (Etapa 5)** ca `optimized_model.h5` deoarece a obtinut cel mai mare scor F1 (0.9911). Acest lucru demonstreaza ca arhitectura initiala a fost bine dimensionata pentru complexitatea problemei, iar complicarea ei (Exp 2) sau incetinirea invatarii (Exp 1) nu au adus beneficii.
 
 ---
 
@@ -266,24 +309,64 @@ Am păstrat modelul **Baseline (Etapa 5)** ca `optimized_model.h5` deoarece a ob
 
 ### Tabel Sumar Rezultate
 
-| **Metrică** | **Target Industrial** | **Rezultat Final (Etapa 6)** | **Status** |
+| **Metrica** | **Target Industrial** | **Rezultat Final (Etapa 6)** | **Status** |
 |-------------|----------------------|------------------------------|------------|
-| Accuracy | ≥ 95% | **98.80%** | ✅ ATINS |
-| F1-score | ≥ 0.90 | **0.9911** | ✅ ATINS |
-| Detecție Urgențe | 100% | **100%** | ✅ ATINS |
-| Latență Inferență | < 50ms | **~2ms** | ✅ ATINS |
+| Accuracy | ≥ 95% | **98.80%** | ATINS |
+| F1-score | ≥ 0.90 | **0.9911** | ATINS |
+| Detectie Urgente | 100% | **100%** | ATINS |
+| Latenta Inferenta | < 50ms | **~2ms** | ATINS |
 
 ---
 
-### 17. Concluzii Finale și Lecții Învățate
+### 17. Concluzii Finale si Lectii Invatate
 
-### 17.1 Evaluarea Performanței
-Sistemul SIA a demonstrat că poate gestiona autonom o intersecție complexă. Integrarea Rețelei Neuronale a eliminat timpii morți specifici semaforelor clasice, adaptându-se dinamic la fluxul de vehicule.
+### 17.1 Evaluarea Performantei
+Sistemul SIA a demonstrat ca poate gestiona autonom o intersectie complexa. Integrarea Retelei Neuronale a eliminat timpii morti specifici semafoarelor clasice, adaptandu-se dinamic la fluxul de vehicule.
 
-### 17.2 Lecții Învățate
-1.  **Datele sunt cheia:** Generarea unui dataset echilibrat și corect etichetat (prin simulatorul propriu) a fost factorul decisiv pentru performanța de 99%.
-2.  **Simplitatea e eficientă:** O rețea neuronală densă simplă (feed-forward) este suficientă pentru probleme de decizie tabulară; modelele mai complexe doar cresc latența fără a îmbunătăți decizia.
-3.  **Hibridizare:** Combinarea AI-ului cu reguli stricte de siguranță (pentru Ambulanță) este obligatorie în sistemele critice.
+### 17.2 Lectii Invatate
+1. **Datele sunt cheia:** Generarea unui dataset echilibrat si corect etichetat (prin simulatorul propriu) a fost factorul decisiv pentru performanta de 99%.
+2. **Simplitatea e eficienta:** O retea neuronala densa simpla (feed-forward) este suficienta pentru probleme de decizie tabulara; modelele mai complexe doar cresc latenta fara a imbunatati decizia.
+3. **Hibridizare:** Combinarea AI-ului cu reguli stricte de siguranta (pentru Ambulanta) este obligatorie in sistemele critice.
 
-### 17.3 Plan Post-Feedback
-Proiectul este pregătit pentru evaluarea finală. Codul este modular, documentat și testat. Următorii pași posibili ar include doar desfășurarea pe hardware fizic (ex: Raspberry Pi) conectat la senzori reali.
+### Cerințe Tehnice Obligatorii
+
+- [ X ] **Accuracy ≥70%** pe test set 
+- [ X ] **F1-Score ≥0.65** pe test set
+- [ X ] **Contribuție ≥40% date originale** (verificabil în `data/generated/`)
+- [ X ] **Model antrenat de la zero** (NU pre-trained fine-tuning)
+- [ X ] **Minimum 4 experimente** de optimizare documentate (tabel în Secțiunea 5.3)
+- [ X ] **Confusion matrix** generată și interpretată (Secțiunea 6.2)
+- [ X ] **State Machine** definit cu minimum 4-6 stări (Secțiunea 4.2)
+- [ X ] **Cele 3 module funcționale:** Data Logging, RN, UI (Secțiunea 4.1)
+- [ X ] **Demonstrație end-to-end** disponibilă în `docs/demo/`
+
+### Repository și Documentație
+
+- [ X ] **README.md** complet (toate secțiunile completate cu date reale)
+- [ X ] **4 README-uri etape** prezente în `docs/` (etapa3, etapa4, etapa5, etapa6)
+- [ X ] **Screenshots** prezente în `docs/screenshots/`
+- [ X ] **Structura repository** conformă cu Secțiunea 8
+- [ X ] **requirements.txt** actualizat și funcțional
+- [ X ] **Cod comentat** (minim 15% linii comentarii relevante)
+- [ X ] **Toate path-urile relative** (nu absolute: `/Users/...` sau `C:\...`)
+
+### Acces și Versionare
+
+- [ X ] **Repository accesibil** cadrelor didactice RN (public sau privat cu acces)
+- [ X ] **Tag `v0.6-optimized-final`** creat și pushed
+- [ X ] **Commit-uri incrementale** vizibile în `git log` (nu 1 commit gigantic)
+- [ X ] **Fișiere mari** (>100MB) excluse sau în `.gitignore`
+
+### Verificare Anti-Plagiat
+
+- [ X ] Model antrenat **de la zero** (weights inițializate random, nu descărcate)
+- [ X ] **Minimum 40% date originale** (nu doar subset din dataset public)
+- [ X ] Cod propriu sau clar atribuit (surse citate în Bibliografie)
+
+---
+
+## Note Finale
+
+**Versiune document:** FINAL pentru examen  
+**Ultima actualizare:** 11.02.2026
+**Tag Git:** `v0.6-optimized-final`
